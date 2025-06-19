@@ -216,6 +216,7 @@ const Calculator: React.FC = () => {
         {arr.map(({ label, id, type }) => (
           <CalcButton
             id={id}
+            keyValue={label}
             key={label}
             typeColor={type as any}
             className={`
